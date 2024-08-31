@@ -8,6 +8,17 @@ const arr = [1, 2, 3];
 const result1 = arr.flatMap(x => [x, x * 2]);
 // Output: [1, 2, 2, 4, 3, 6]
 
+// flattening 2D arrays
+const arrays = [[1, 2], [3, 4], [5, 6]];
+const resultf = arrays.flatMap(x => x);
+// Output: [1, 2, 3, 4, 5, 6]
+
+// flat() with depth - flattening any level
+// flattening a 3D array
+const array3D = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+const flattened = array3D.flat(2);
+// Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
 // --------------------------------------------------------------------------------------------------------------------
 
 // some() - It tests whether at least one element in the array passes the test implemented by the provided function.
